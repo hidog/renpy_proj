@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/screens.rpy", line 295: u'scene' is not a keyword argument or valid child for the vbox statement.
+    scene test
+         ^
+
+Ren'Py Version: Ren'Py 7.4.3.1414
+Sun May 30 15:42:28 2021

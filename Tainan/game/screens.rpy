@@ -291,7 +291,7 @@ style quick_button_text:
 
 screen navigation():
 
-    vbox:
+    vbox:    
         style_prefix "navigation"
 
         xpos gui.navigation_xpos
@@ -301,15 +301,15 @@ screen navigation():
 
         if main_menu:
 
-            textbutton _("Start") action Start()
+            textbutton _("Start 2") action Start()
 
         else:
 
-            textbutton _("History") action ShowMenu("history")
+            textbutton _("History 2") action ShowMenu("history")
 
-            textbutton _("Save") action ShowMenu("save")
+            textbutton _("Save 2") action ShowMenu("save")
 
-        textbutton _("Load") action ShowMenu("load")
+        textbutton _("Load 2") action ShowMenu("load")
 
         textbutton _("Preferences") action ShowMenu("preferences")
 
@@ -502,6 +502,7 @@ style game_menu_outer_frame:
     top_padding 120
 
     background "gui/overlay/game_menu.png"
+    #background "images/test.jpg"
 
 style game_menu_navigation_frame:
     xsize 280
@@ -1143,7 +1144,8 @@ screen confirm(message, yes_action, no_action):
 
     style_prefix "confirm"
 
-    add "gui/overlay/confirm.png"
+    #add "gui/overlay/confirm.png"
+    add "images/test.png"
 
     frame:
 
@@ -1451,7 +1453,8 @@ style nvl_window:
 
 style main_menu_frame:
     variant "small"
-    background "gui/phone/overlay/main_menu.png"
+    #background "gui/phone/overlay/main_menu.png"
+    background "images/test.png"
 
 style game_menu_outer_frame:
     variant "small"

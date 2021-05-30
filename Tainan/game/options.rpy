@@ -23,7 +23,7 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "1.0"
+define config.version = "1.6"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
@@ -142,7 +142,7 @@ default preferences.afm_time = 15
 ## This generally should not be changed, and if it is, should always be a
 ## literal string, not an expression.
 
-define config.save_directory = "Tainan-1622391252"
+define config.save_directory = "Tainan-1617949499"
 
 
 ## Icon ########################################################################
@@ -193,7 +193,6 @@ init python:
 
     build.documentation('*.html')
     build.documentation('*.txt')
-
 
 ## A Google Play license key is required to download expansion files and perform
 ## in-app purchases. It can be found on the "Services & APIs" page of the Google
