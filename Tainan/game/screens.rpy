@@ -502,7 +502,6 @@ style game_menu_outer_frame:
     top_padding 120
 
     background "gui/overlay/game_menu.png"
-    #background "images/test.jpg"
 
 style game_menu_navigation_frame:
     xsize 280
@@ -1144,8 +1143,7 @@ screen confirm(message, yes_action, no_action):
 
     style_prefix "confirm"
 
-    #add "gui/overlay/confirm.png"
-    add "images/test.png"
+    add "gui/overlay/confirm.png"
 
     frame:
 
@@ -1453,8 +1451,7 @@ style nvl_window:
 
 style main_menu_frame:
     variant "small"
-    #background "gui/phone/overlay/main_menu.png"
-    background "images/test.png"
+    background "gui/phone/overlay/main_menu.png"
 
 style game_menu_outer_frame:
     variant "small"
