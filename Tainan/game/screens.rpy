@@ -304,7 +304,9 @@ screen navigation():
 
             imagebutton : 
                 ypos 66
-                idle "gui/1.png" action Start()
+                idle "gui/1.png" 
+                hover "gui/1-1.png"
+                action Start()
 
         else:
 
@@ -316,7 +318,9 @@ screen navigation():
 
             imagebutton :
                 ypos 81
-                idle "gui/2.png" action ShowMenu("load")
+                idle "gui/2.png" 
+                hover "gui/2-1.png"
+                action ShowMenu("load")
                 
         else:
         
@@ -325,7 +329,9 @@ screen navigation():
         if main_menu:
             imagebutton :
                 ypos 96
-                idle "gui/3.png" action ShowMenu("preferences")
+                idle "gui/3.png" 
+                hover "gui/3-1.png"
+                action ShowMenu("preferences")
                 
         else:
             textbutton _("Preferences") action ShowMenu("preferences")
@@ -341,7 +347,9 @@ screen navigation():
         if main_menu:
             imagebutton :
                 ypos 112
-                idle "gui/4.png" action ShowMenu("about")
+                idle "gui/4.png" 
+                hover "gui/4-1.png"
+                action ShowMenu("about")
         
         else:
             textbutton _("About") action ShowMenu("about")
@@ -352,7 +360,9 @@ screen navigation():
             if main_menu:
                 imagebutton :
                     ypos 130
-                    idle "gui/5.png" action ShowMenu("help")
+                    idle "gui/5.png" 
+                    hover "gui/5-1.png"
+                    action ShowMenu("help")
             
             else:
                 textbutton _("Help") action ShowMenu("help")
@@ -364,7 +374,9 @@ screen navigation():
             if main_menu:
                 imagebutton:
                     ypos 145
-                    idle "gui/6.png" action Quit(confirm=not main_menu)
+                    idle "gui/6.png" 
+                    hover "gui/6-1.png"
+                    action Quit(confirm=not main_menu)
             
             else:
                 textbutton _("Quit") action Quit(confirm=not main_menu)
