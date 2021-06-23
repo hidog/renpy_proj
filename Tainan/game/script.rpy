@@ -311,5 +311,62 @@ label 台灣教會公報社:
     hide a happy 1
     hide b happy
     hide m happy
+    
+    scene bg 11
+    
+    show a happy 2 at right
+    
+    a "這裡是扭蛋將…"
+    
+    hide a happy 2
+    show a wow at right
+    
+    a "咦咦咦咦…等等！小棠怎麼不見了！"
+    
+    "要陪嚴恬一起找小棠嗎？"
+    
+    hide a wow
+    
+menu:
 
+    "一起找":
+        jump game
+        
+    "不找":
+        jump end1
+        
+label game:
+    
+    show a happy 1 at right
+    
+    a "那我們就就近開始找吧！"
+    
+    show m happy at left
+    
+    m "那就先在這家店找找看"
+    
+    hide m happy
+    hide a happy 1
+    show a wow at right
+    
+    b "等等…那個不就是小棠嗎！"
+    
+    jump continue
+    
+label end1:
+    
+    scene bg 11
+    show black
+    with fade
+    
+    "沒有了小棠的旅途就像是失去了指引的方向，因為嚴恬是路癡一直迷路也沒幫[povname]找到回家的方法，最後[povname]變得無家可歸，漂泊在台南…"
+    
+    "end"
+    
+    return
+    
+label continue:
+    
+    "眼前一位熟悉的身影正在扭著扭蛋，手上還捧著許多像是剛剛扭到的新玩具們。"
+    
     return
