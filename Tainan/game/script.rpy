@@ -29,16 +29,22 @@ define m = Character("[povname]")
 label start:
 label 光華校門口:
 
+    scene ch 0
+    
+    window hide
+    pause
+    
+    scene bg 0
+    window show
+
     python:
         povname = "???"
-
-    scene bg 0
 
     #show cha a happy :
     #    xalign 0.2 yalign 1.0
 
     "……"
-
+   
     show a happy 1 at right
 
     a "那照這樣的進度來看我們應該可以在下周前做完這份報告！"
@@ -159,7 +165,13 @@ label 光華校門口:
     
 label 台南神學院:
 
+    scene ch 1
+    
+    window hide
+    pause
+    
     scene bg 1
+    window show
     
     show a happy 2 at right
     
@@ -174,7 +186,13 @@ label 台南神學院:
     
 label 台灣教會公報社:
     
+    scene ch 2
+    
+    window hide
+    pause
+    
     scene bg 2
+    window show
     
     "台灣教會公報社"
     
