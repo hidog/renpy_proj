@@ -373,7 +373,14 @@ label game:
     
 label end1:
     
+    scene ch 11
+    
+    window hide
+    pause
+    
     scene bg 11
+    window show
+    
     show black
     with fade
     
