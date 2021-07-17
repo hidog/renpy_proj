@@ -330,7 +330,13 @@ label 台灣教會公報社:
     hide b happy
     hide m happy
     
+    scene ch 11
+    
+    window hide
+    pause
+    
     scene bg 11
+    window show
     
     show a happy 2 at right
     
@@ -367,19 +373,11 @@ label game:
     hide a happy 1
     show a wow at right
     
-    b "等等…那個不就是小棠嗎！"
+    a "等等…那個不就是小棠嗎！"
     
-    jump continue
+    jump continue1
     
 label end1:
-    
-    scene ch 11
-    
-    window hide
-    pause
-    
-    scene bg 11
-    window show
     
     show black
     with fade
@@ -390,8 +388,255 @@ label end1:
     
     return
     
-label continue:
+label continue1:
+    
+    hide a wow
     
     "眼前一位熟悉的身影正在扭著扭蛋，手上還捧著許多像是剛剛扭到的新玩具們。"
+    
+    show b happy
+    
+    b "嗯哼哼哼哼～啦啦啦～"
+    
+    hide b happy
+    show b happy at left
+    show a 1 at right
+    
+    a "小棠！！！你怎麼又都不說一聲就自己跑去玩！！！"
+    
+    hide b happy
+    show b wow at left
+    
+    b "！！！"
+
+    b "咦咦咦！怎麼了嗎？"
+    
+    a "你還問怎麼了！！我們剛剛才話說到一半，你怎麼就突然不見了！！"
+    
+    b "啊～抱歉抱歉，我突然看到喜歡的動畫出新一番賞～忍不住就去抽了嘛～"
+    
+    hide b wow
+    hide a 1
+    show m 2
+    
+    m "害我們白擔心一場了…"
+    
+    show b 1 at left
+    
+    b "欸嘿嘿嘿…"
+    
+    show a 1 at right
+    
+    a "唉…總之能找到小棠就好了。"
+    
+    "嚴恬搖了搖頭說道。"
+    
+    hide m 2
+    hide a 1
+    hide b 1
+    show b happy at left
+    
+    b "啊…這裡是扭蛋將軍，是我很喜歡的店喔！時常會進貨一些新的扭蛋跟一番賞喔！"
+    
+    b "因為我跟嚴恬之前去台北玩的時候發現台北很多這種可以抽一番賞和扭蛋的店家，但台南卻很少這類型的店，所以意外發現這家店的時候，就決定要介紹這裡了！"
+    
+    hide b happy
+    show a happy 2 at right
+    
+    a "[povname]要不要也玩看看呢？"
+    
+    hide a happy 2
+    
+menu:
+
+    "玩！":
+        jump play
+        
+    "不玩。":
+        jump noplay
+        
+label play:
+
+    show m happy
+    
+    m "玩啊！哪次不玩了！"
+    
+    m "…那要扭哪個好呢？"
+    
+    show b happy at left
+    
+    b "[povname]、嚴恬！！！你們看看這個！！！"
+    
+    hide m happy
+    show m wow
+    show a wow at right
+    
+    a "怎麼了？"
+    
+    b "你們看這個扭蛋超可愛的！"
+    
+    a "真的欸！"
+    
+    hide b happy
+    show b sad at left
+    
+    b "嗚嗚嗚…我剛剛花太多在別的上了沒錢抽了…"
+    
+    a "齁你真的是…"
+    
+    hide b sad
+    hide a wow
+    hide m wow
+    show m happy
+    
+    m "那我扭這個吧！"
+    
+    show a happy 2 at right
+    
+    a "好啊。"
+    
+    hide a happy 2
+    show a 1 at right
+    show b 1 at left
+    
+    a "……"
+    
+    hide a 1
+    hide b 1
+    show a wow at right
+    show b wow at left
+    
+    a "……等等！！[povname]你怎麼會有台灣的錢！"
+    
+    b "該不會你其實…！！"
+    
+    hide a wow
+    hide b wow
+    hide m happy
+    show m 3
+    
+    m "啊啊啊…你們是在想什麼啦！！"
+    
+    m "我會有你們的錢是因為，我在我的掉下來的地方的地上不知道為什麼凸了一塊。"
+    
+    m "總覺得下面好像埋了些什麼，所以我就挖看看了。"
+    
+    m "結果發現裡面放了很多像是紙幣的東西，我就猜這應該是你們台灣交易用的錢幣吧！"
+    
+    m "總之我想說就拿來當我的旅費吧！"
+    
+    show a 1 at right
+    show b 1 at left
+    
+    a "…希望不是誰不小心掉在那裡的就好…。"
+   
+    m "總之，我來扭看看吧！"
+    
+    "「噠噠噠噠––咚」一顆扭蛋掉出來了。"   
+    
+    hide a 1
+    hide b 1
+    hide m 3
+    show m happy
+    show b wow at left
+    show a wow at right
+    
+    b "哇！這個是吉祥物的吊飾！"
+    
+    m "好可愛喔！！"
+    
+    b "總覺得會很想蒐集一整套呢！"
+    
+    hide m happy
+    hide b wow
+    hide a wow
+    
+    jump continue2
+    
+label noplay:
+
+
+    jump continue2
+    
+label continue2:
+
+    "咕～～～咕嚕嚕嚕～～～"
+    
+    show a sad at right
+    show b wow at left
+    
+    b "咦咦，嚴恬原來你餓了嗎？！"
+    
+    b "那我們要不要先去吃個點心呢？"
+    
+menu:
+
+    "吃點心！":
+        jump eat
+        
+    "不吃。":
+        jump noeat
+        
+label eat:
+
+    b "嗯…那我們去吃那個吧！"
+    
+    hide a sad
+    show a happy 1 at right
+    
+    a "那家嗎！"
+    
+    show m 2
+    
+    m "？？？"
+    
+    show b happy at left
+    
+    b "唉呦走就對了！"
+    
+    hide a happy 1
+    hide m 2
+    hide b happy
+    
+    
+    scene ch 11-1
+    
+    window hide
+    pause
+    
+    scene bg 11-1
+    with dissolve
+    window show
+    
+    show a happy 1 at right
+    
+    a "這熟悉的味道…"
+    
+    show b happy at left
+    
+    b "是桑原商店！！"
+    
+    a "這邊是仿日式的一間小店，有賣一些甜點，還可以順便在這邊拍照。"
+    
+    b "我和嚴恬很喜歡來這邊買點心呢！"
+    
+    show l 1
+    hide a happy 1
+    show a happy 2 at right
+    
+    b "還有賣冰淇淋喔！"
+    
+    
+    
+    
+    jump continue3
+    
+label noeat:
+
+    jump continue3
+    
+label continue3:
+    
+    "00"
     
     return
