@@ -9,10 +9,10 @@ init python:
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define a = Character("嚴恬")
-define b = Character("小棠")
+define a = Character("嚴恬",color="#26C8D1")
+define b = Character("小棠",color="#26C8D1")
 # define m = Character("主人公", color="#c8c8f")
-define m = Character("[povname]")
+define m = Character("[povname]",color="#26C8D1")
 
 # The game starts here.
 
