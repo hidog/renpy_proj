@@ -42,7 +42,8 @@ label 光華校門口:
 
     #show cha a happy :
     #    xalign 0.2 yalign 1.0
-
+    
+    
     "……"
    
     show a happy 1 at right
@@ -215,13 +216,20 @@ label 台灣教會公報社:
     
     scene bg 4
     
+    window hide
+    pause
+    
     " "
     
     scene bg 5
     
+    window hide
+    pause
+    
     " "
     
     scene bg 6
+    window show
     
     show b happy at left
     
@@ -329,6 +337,8 @@ label 台灣教會公報社:
     hide a happy 1
     hide b happy
     hide m happy
+    
+label 扭蛋將軍:
     
     scene ch 11
     
@@ -598,6 +608,7 @@ label eat:
     hide m 2
     hide b happy
     
+label 桑原商店:
     
     scene ch 11-1
     
@@ -618,25 +629,120 @@ label eat:
     
     a "這邊是仿日式的一間小店，有賣一些甜點，還可以順便在這邊拍照。"
     
+    show m wow
+    
+    m "真的很漂亮呢！"
+    
     b "我和嚴恬很喜歡來這邊買點心呢！"
     
+    hide m wow
     show l 1
     hide a happy 1
     show a happy 2 at right
     
     b "還有賣冰淇淋喔！"
     
+    hide l 1
+    show m happy
     
+    m "哇！感覺不錯欸！我也要吃看看！"
     
+    m "嗯～真好吃欸！"
+    
+    b "對吧對吧！"
+    
+    a "那我們吃飽了來去下個景點吧！"
+    
+    hide m happy
+    hide a happy 2
+    hide b happy
     
     jump continue3
     
 label noeat:
 
+    b "好吧！那我們就去下個地點吧！"
+    
+    hide b happy
+    hide a sad
+    
     jump continue3
     
 label continue3:
+
+label 藝豐漫畫便利屋:    
+    scene ch 12
     
-    "00"
+    window hide
+    pause
+    
+    scene bg 12
+    window show
+    
+    show a happy 1 at right
+    
+    a "這裡又是一個小棠很愛來的地方了。"
+    
+    show b happy at left
+    
+    b "這裡是藝豐漫畫便利屋！"
+    
+    b "如果有喜歡的漫畫或是動漫周邊這邊幾乎都買的到喔！"
+    
+    a "因為常常陪小棠來，發現這裡東西的刷新率很高呢，常常剛出的東西他們就已經上架了。"
+    
+    b "他們店小小的但東西卻很多，如果有找不到的東西都可以請店員幫忙找喔。"
+    
+    b "就算店內沒有的東西也可以問看看，請店員幫你訂貨，他們都很親切的喔。"
+    
+    show m wow
+    
+    m "真的很不錯呢！"
+    
+    b "那我們30分鍾店門口見，我去逛了～"
+    
+    hide b happy
+    hide a happy 1
+    hide m wow
+    show a 1 at right
+    show m 2 at left
+    
+    a "跑得真快……"
+    
+    m "真的……。"
+    
+    hide a 1
+    hide m 2
+    
+    "30分鐘後…。"
+    
+    show a wow at right
+    show b wow at left
+    
+    b "哇喔喔！[povname]你意外的買了很多的漫畫呢！"
+    
+    hide b wow
+    show b happy
+    
+    b "是不是也體會到了這家店超好買的！"
+    
+    show m 2
+    
+    m "是不錯啦…"
+    
+    hide a wow
+    show a happy 1
+    
+    a "既然逛完了，我們就去下個景點吧！"
+    
+label 知事官邸:
+  
+    scene ch 13
+    
+    window hide
+    pause
+    
+    scene bg 13
+    window show
     
     return
