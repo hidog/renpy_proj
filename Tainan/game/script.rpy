@@ -195,8 +195,6 @@ label 台灣教會公報社:
     scene bg 2
     window show
     
-    "台灣教會公報社"
-    
     show b 1 at left
 
     b "這裡是台灣教會公報社。"
@@ -745,10 +743,71 @@ label 知事官邸生活館:
     scene bg 13
     window show
     
-    show a at right
+    show a happy 1 at right
     
     a "這裡是知事官邸生活館。"
     
-    b "00"
+    show b happy at left
+    
+    b "知事官邸生活館是日治時期就建成的，後來也被列為臺南市市定古蹟。"
+    
+    show m wow
+    
+    m "嗯，總覺得它跟我印象中的台南古蹟有很大的不同呢！！"
+    
+    b "對吧對吧！我也覺得這邊超漂亮又很文青！"
+    
+    a "啊，先別在門口聊了，我們進去看看吧。"
+    
+    hide a happy 1
+    hide b happy
+    hide m wow
+    
+    scene bg 14
+    
+    window hide
+    pause
+    
+    scene bg 14
+    window show
+    
+    show b happy at left
+    
+    b "一進門就會看到天花板上書本造型的裝置藝術。"
+    
+    show m wow
+    
+    m "！！！"
+    
+    m "好特別的裝飾方式！我在以前的星球完全沒看過！"
+    
+    show a happy 2 at right
+    
+    a "一樓旁邊有販賣一些文創的小商品，像是杯墊、吊飾…等。"
+    
+    hide a happy 2
+    hide b happy
+    hide m wow
+    
+    scene bg 15
+    
+    window hide
+    pause
+    
+    scene bg 15
+    window show
+    
+    show b 1 at left
+
+    b "二樓一上來，就會看到這邊有一區是販售文創品牌的東西。"
+    
+    show m wow
+
+    m "哇，都蠻精緻的呢！"
+
+
+    
+    
+    
     
     return
