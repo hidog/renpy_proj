@@ -753,7 +753,7 @@ label 知事官邸生活館:
     
     show m wow
     
-    m "嗯，總覺得它跟我印象中的台南古蹟有很大的不同呢！！"
+    m "嗯～總覺得它跟我印象中的台南古蹟有很大的不同呢！！"
     
     b "對吧對吧！我也覺得這邊超漂亮又很文青！"
     
@@ -781,13 +781,14 @@ label 知事官邸生活館:
     
     m "好特別的裝飾方式！我在以前的星球完全沒看過！"
     
+    hide m wow
+    
     show a happy 2 at right
     
     a "一樓旁邊有販賣一些文創的小商品，像是杯墊、吊飾…等。"
     
     hide a happy 2
     hide b happy
-    hide m wow
     
     scene bg 15
     
@@ -801,11 +802,50 @@ label 知事官邸生活館:
 
     b "二樓一上來，就會看到這邊有一區是販售文創品牌的東西。"
     
-    show m wow
+    hide b 1
+    show m wow at left
 
     m "哇，都蠻精緻的呢！"
-
-
+    
+    m "啊，右邊有一個門欸，是可以出去的嗎？"
+    
+    show a happy 2 at right 
+    
+    a "可以啊！"
+    
+    hide b 1
+    hide m wow
+    hide a happy 2
+    
+    scene bg 16
+    
+    window hide
+    pause
+    
+    scene bg 16
+    window show
+    
+    show m happy
+    
+    m "哇啊，真的好漂亮啊。"
+    
+    show b happy at left
+    
+    b "對啊，從這邊可以往下看樓下的花園呢。"
+    
+    m "這邊的走廊感覺也很適合拍照呢！"
+    
+    show a happy 1 at right
+    
+    a "對啊。"
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
