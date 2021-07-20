@@ -722,7 +722,7 @@ label 藝豐漫畫便利屋:
     b "哇喔喔！[povname]你意外的買了很多的漫畫呢！"
     
     hide b wow
-    show b happy
+    show b happy at left
     
     b "是不是也體會到了這家店超好買的！"
     
@@ -731,11 +731,11 @@ label 藝豐漫畫便利屋:
     m "是不錯啦…"
     
     hide a wow
-    show a happy 1
+    show a happy 1 at right
     
     a "既然逛完了，我們就去下個景點吧！"
     
-label 知事官邸:
+label 知事官邸生活館:
   
     scene ch 13
     
@@ -744,5 +744,11 @@ label 知事官邸:
     
     scene bg 13
     window show
+    
+    show a at right
+    
+    a "這裡是知事官邸生活館。"
+    
+    b "
     
     return
