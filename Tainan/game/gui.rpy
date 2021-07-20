@@ -54,7 +54,7 @@ define gui.interface_text_color = u'#ffffff'
 
 ## Fonts and Font Sizes ########################################################
 
-define gui.text_font = "msjh.ttc"
+define gui.text_font = "DFT_B5.TTC"
 ## The font used for in-game text.
 
 ## The font used for character names.
