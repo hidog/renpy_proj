@@ -29,6 +29,7 @@ define m = Character("[povname]",color="#26C8D1")
 label start:
 label 光華校門口:
 
+    play music "Pickled Pink.mp3"
     scene ch 0
     
     window hide
@@ -59,6 +60,9 @@ label 光華校門口:
     hide a happy 1
     hide b happy
     
+    stop music
+    play sound "car-door-close-3.wav"
+    
     "「咚———」"
     
     show b wow at left
@@ -69,7 +73,11 @@ label 光華校門口:
     
     hide b wow
     
+    play sound "footsteps-2.wav"
+    
     "「噠噠噠噠—」聽到奇怪的聲響後，小棠和嚴恬便加快腳步往聲音方向走去。"
+    
+    play music "Bass Meant Jazz.mp3" fadein 1.0
     
     show a wow at right
     
@@ -166,6 +174,8 @@ label 光華校門口:
     
 label 台南神學院:
 
+    play music "Pickled Pink.mp3" fadeout 1.0 fadein 1.0
+    
     scene ch 1
     
     window hide
@@ -219,13 +229,6 @@ label 台灣教會公報社:
     
     " "
     
-    scene bg 5
-    
-    window hide
-    pause
-    
-    " "
-    
     scene bg 6
     window show
     
@@ -270,9 +273,11 @@ label 台灣教會公報社:
     show m happy at right
     
     m "真的很特別呢！難得來一趟，我也來玩看看吧！"
-
+    
+    play sound "coin_1.wav"
+    
     "說完[povname]便投下硬幣，錢幣掉進了「節制」裡。"
-
+    
     hide m happy
     show m 3 at right
 
@@ -298,6 +303,9 @@ label 台灣教會公報社:
     scene bg 9
     
     show a happy 2 at right
+    
+    stop music
+    play music "Lovely Piano Song.mp3" fadeout 1.0 fadein 1.0
     
     a "哇，是個很厲害的牧師呢！畫的圖都十分有意境！"
     
@@ -338,6 +346,9 @@ label 台灣教會公報社:
     
 label 扭蛋將軍:
     
+    stop music
+    play music "Pickled Pink.mp3" fadeout 1.0 fadein 1.0
+    
     scene ch 11
     
     window hide
@@ -350,8 +361,12 @@ label 扭蛋將軍:
     
     a "這裡是扭蛋將…"
     
+    stop music
+    
     hide a happy 2
     show a wow at right
+    
+    play music "Abstract Anxiety.mp3" fadeout 1.0 fadein 1.0
     
     a "咦咦咦咦…等等！小棠怎麼不見了！"
     
@@ -381,11 +396,17 @@ label game:
     hide a happy 1
     show a wow at right
     
+    stop music
+    play sound "sound28.mp3"
+    
     a "等等…那個不就是小棠嗎！"
     
     jump continue1
     
 label end1:
+    
+    stop music
+    play music "Brothers Unite.mp3" fadeout 1.0 fadein 1.0
     
     show black
     with fade
@@ -398,17 +419,23 @@ label end1:
     
 label continue1:
     
+    play music "Pickled Pink.mp3" fadeout 1.0 fadein 1.0
+    
     hide a wow
     
     "眼前一位熟悉的身影正在扭著扭蛋，手上還捧著許多像是剛剛扭到的新玩具們。"
     
     show b happy
     
+    play sound "whistling.wav"
+    
     b "嗯哼哼哼哼～啦啦啦～"
     
     hide b happy
     show b happy at left
     show a 1 at right
+    
+    play music "Nightmare.mp3" fadeout 1.0 fadein 1.0
     
     a "小棠！！！你怎麼又都不說一聲就自己跑去玩！！！"
     
@@ -428,6 +455,9 @@ label continue1:
     show m 2
     
     m "害我們白擔心一場了…"
+    
+    stop music
+    play music "Pickled Pink.mp3" fadeout 1.0 fadein 1.0
     
     show b 1 at left
     
@@ -540,6 +570,8 @@ label play:
    
     m "總之，我來扭看看吧！"
     
+    play sound "dropping-2.wav"
+    
     "「噠噠噠噠––咚」一顆扭蛋掉出來了。"   
     
     hide a 1
@@ -567,7 +599,9 @@ label noplay:
     jump continue2
     
 label continue2:
-
+    
+    play sound "462087__mar-u02144__hungry-stomach.wav"
+    
     "咕～～～咕嚕嚕嚕～～～"
     
     show a sad at right
@@ -602,11 +636,16 @@ label eat:
     
     b "唉呦走就對了！"
     
+    stop music
+    play sound "footsteps-4.wav"
+    
     hide a happy 1
     hide m 2
     hide b happy
     
 label 桑原商店:
+    
+    play music "Pickled Pink.mp3" fadeout 1.0 fadein 1.0
     
     scene ch 11-1
     
@@ -697,6 +736,8 @@ label 藝豐漫畫便利屋:
     
     m "真的很不錯呢！"
     
+    play sound "footsteps-2.wav"
+    
     b "那我們30分鍾店門口見，我去逛了～"
     
     hide b happy
@@ -759,6 +800,9 @@ label 知事官邸生活館:
     
     a "啊，先別在門口聊了，我們進去看看吧。"
     
+    stop music
+    play music  "Lucky Break.mp3" fadeout 1.0 fadein 1.0
+    
     hide a happy 1
     hide b happy
     hide m wow
@@ -813,6 +857,9 @@ label 知事官邸生活館:
     
     a "可以啊！"
     
+    play sound "door-open-7.wav"
+    play music  "A Very Brady Special.mp3" fadeout 1.0 fadein 1.0
+    
     hide b 1
     hide m wow
     hide a happy 2
@@ -839,15 +886,118 @@ label 知事官邸生活館:
     
     a "對啊。"
     
+    b "那我們也來拍一張吧！"
     
+    play sound "camera-click-1.wav"
     
+    "喀擦——"
     
+    m "這樣就算我回去也還是能常常看照片回味了！"
     
+    hide m happy
+    hide b happy
+    hide a happy
     
+    scene bg 17
     
+    window hide
+    pause
     
+    scene bg 17
+    window show
     
+    stop music
+    play music  "Lucky Break.mp3" fadeout 1.0 fadein 1.0
     
+    show m wow
     
+    m "哇，這邊展示了許多的畫呢！"
+    
+    show a happy 2 at right
+    
+    a "對啊，現在展的是「聞歌始覺有人來」，是由十藝家們的創作作品喔！"
+    
+    show b happy at left
+    
+    b "這次共展覽了47幅作品呢！"
+    
+    hide m happy
+    hide b happy
+    hide a happy
+    
+    scene bg 18
+    
+    window hide
+    pause
+    
+    scene bg 18
+    window show
+    
+    show m wow
+    
+    m "哇，這邊還有展示長餐桌！"
+    
+    hide m wow
+    
+    show b wow at left
+    
+    b "咦你居然知道這個嗎！？"
+    
+    hide b wow
+    show b happy at left
+    show a happy 2 at right
+    
+    a "這種餐桌我和小棠以前都沒看過實體呢！"
+    
+    hide b happy
+    show b sad at left
+    
+    b "畢竟是很高級昂貴的東西呢。"
+    
+    hide a happy
+    hide b sad
+    
+    scene bg 19
+    
+    window hide
+    pause
+    
+    scene bg 19
+    window show
+    
+    show b happy at left
+    
+    b "哇，假如我是歐洲貴族的書房可能就是長這樣吧！"
+    
+    show m 2
+    
+    m "你還是醒醒吧…"
+    
+    show a happy 1 at right
+    
+    a "知事官邸生活館真的是個很適合放鬆看展覽的地方呢。"
+    
+    a "每隔一段時間就會有新的展覽展出喔，可以常常過來看看！"
+    
+    b "逛了這麼久也說了很多話，有點渴了呢……"
+    
+    a "那我們帶他一起去台南獨有的飲料店吧！"
+    
+    hide b happy
+    show b wow at left
+    
+    b "！！！"
+    
+    b "走吧走吧！"
+    
+label 波哥茶飲:
+  
+    scene ch 13
+    
+    window hide
+    pause
+    
+    scene bg 13
+    window show
     
     return
