@@ -990,14 +990,212 @@ label 知事官邸生活館:
     
     b "走吧走吧！"
     
+    hide b wow
+    hide a happy 1
+    hide m 2
+    
 label 波哥茶飲:
   
-    scene ch 13
+    scene ch 23
     
     window hide
     pause
     
-    scene bg 13
+    scene bg 23
     window show
+    
+    show m slaver
+    
+    m "哇！一靠近就感覺能聞到茶香呢！"
+    
+    show b slaver at left
+    
+    b "嘿嘿嘿～"
+    
+    hide m slaver
+    show m facepalm
+    
+    m "你幹嘛一臉也很想喝的樣子…"
+    
+    show a happy 2 at right
+    hide m facepalm
+    
+    "哈哈，小棠可是道地的台南人呢，也特別喜歡喝手搖！"
+    
+    hide b slaver
+    show b excited at left
+    
+    b "這間飲料店那麼好喝當然要喝爆了！"    
+    
+    a "這間飲料店很特別喔，是台南獨有的飲料店！"
+    
+    b "而且他是在十幾年前飲料店還沒那麼盛行的時候就有的店喔！"
+    
+    show m excited
+    
+    m "哇！那真的蠻早的！"
+    
+    m "我們去點餐吧！"
+    
+    hide b excited at left
+    show b slaver
+    
+    b "他們的飲料都很不錯喔，很多都是他們特製的！"
+    
+    hide m excited
+    show m slaver
+    
+    m "哇，那你們有什麼推薦的嗎！"
+    
+    a "小棠最愛的就是「綜合新味」莫屬了吧！"
+    
+    b "當然當然了！"
+    
+    hide a happy 2
+    show a slaver at right
+    
+    a "我的話蠻喜歡喝他們的玄米茶，很好喝喔！"
+    
+    hide m slaver
+    show m question
+    
+    m "那我要喝什麼好呢？"
+    
+    hide b slaver
+    show b ! at left
+    
+    b "啊！他們有一種飲料叫「小幽浮」感覺很適合你喝呢！」
+    
+    m "那我就喝那個吧！"
+    
+    hide m question
+    show m slaver
+    
+    a "不過話說回來，你有比較想到你的飛船掉到哪了嗎？"
+    
+    hide m slaver
+    hide b !
+    hide a slaver
+    
+menu:
+
+    "想到了！":
+        jump remember
+        
+    "還沒想到。":
+        jump noremember
+        
+label remember:
+    
+    show b excited at left
+    
+    b "真的嗎！"
+    
+    show m excited
+    
+    m "對啊！"
+    
+    m "應該也是在這附近！"
+    
+    b "太好了！！"
+    
+    show a question at left
+    
+    a "那你想回去嗎？"
+menu:
+
+    "想到要回去還是有點寂寞呢……":
+        jump end2
+        
+    "當然！我想回去自己的星球！":
+        jump end3
+        
+label end2:
+    
+    hide a question
+    hide b excited
+    hide m excited
+    show b ! at left
+    
+    b "那你要不要就繼續住在台南呢！"
+    
+    show m happy
+    
+    m "嗯…好像可以！"
+    
+    m "我蠻喜歡台南的！我就住下來吧！"
+    
+    hide b !
+    show b excited at left
+    
+    b "太好了！這樣之後我們都還是可以一起玩了！"
+    
+    show a slaver at right
+    
+    a "太好了呢！以後還請多多指教了！"
+    
+    hide a slaver
+    hide b excited
+    hide m happy
+    
+    "end"
+    
+    return
+    
+label end3:
+    
+    hide a question
+    hide b excited
+    hide m excited
+    show m 1
+    
+    m "我果然還是想回去自己的星球呢…"
+    
+    m "跟你們一起遊台南的這段時間真的很開心！"
+    
+    m "有機會我還是會再來找你們玩的！"
+    
+    show b sad at left
+    
+    b "好吧，再見啦！"
+    
+    show a sad at right
+    
+    a "後會有期！"
+    
+    "end"
+    
+    return
+    
+label noremember:    
+    
+    
+    
+    jump continue4
+    
+label continue3:
+    
+    hide a question
+    hide b excited
+    hide m excited
+    show b ! at left
+    
+    b "那你先待在台南吧，我們會繼續陪你找你的飛船的！"
+    
+    show m wow
+    
+    m "真的可以嗎！"
+    
+    show a happy 1 at right
+    
+    a "沒問題的。"
+    
+    hide a happy 1
+    hide b !
+    hide m wow
+    
+    "在這之後他們也陪了[povname]在台南待了一段時間，終於找到他的飛船了，真是可喜可賀可喜可賀！"
+    
+    "end"
     
     return
